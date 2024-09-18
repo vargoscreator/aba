@@ -142,7 +142,7 @@ main.main{
 @media (max-width: 479px) {
     html,body{
         font-size: 14px
-    };
+    }
     .container{
         max-width: 320px;
     }
@@ -357,7 +357,7 @@ main.main{
     max-width: 1392px;
 }
 .hero__slider{
-    max-height: 545px;
+    height: 545px;
     overflow: hidden;
     position: relative;
     border-radius: 40px;
@@ -496,7 +496,7 @@ main.main{
     }
     .hero__slider{
         border-radius: 0;
-        max-height: none;
+        height: auto;
     }
     .hero__slide{
         flex-direction: column-reverse;
@@ -1164,6 +1164,68 @@ main.main{
     .footer__inner{
         grid-template-columns: 1fr;
         gap: 50px;
-    }
-    
+    }    
+}
+
+
+
+
+
+
+.notfound{
+    margin-top: 96px;
+}
+.notfound__inner{
+    padding: 62px 20px 82px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: url('../img/notfound.svg'), linear-gradient(101deg, #C2EAC7 1.73%, #D1E2F9 91.8%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    max-width: 1006px;
+    margin: 0 auto;
+}
+.notfound__name {
+    text-align: center;
+    font-size: 240px;
+    font-weight: 600;
+    line-height: 115%; /* 276px */
+    letter-spacing: -2.4px;
+    margin-bottom: -22px;
+}
+.notfound__name span{
+    color: #55AC30;
+    font-weight: 900;
+    position: relative;
+}
+.notfound__name span::before{
+    content: '';
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='27' viewBox='0 0 21 27' fill='none'%3E%3Cellipse cx='10.5' cy='13.5' rx='10.5' ry='13.5' fill='%2355AC30'/%3E%3C/svg%3E");
+    width: 21px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 112px;
+    left: 76px;
+}
+.notfound__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 115%; /* 23px */
+    letter-spacing: -0.2px;
+}
+.notfound__descr {
+    line-height: 163%;
+    text-align: center;
+    max-width: 549px;
+    margin: 15px auto 0;
+}
+.notfound__btn {
+    height: 57px;
+    max-width: 338px;
+    margin: 26px auto 0;
 }
