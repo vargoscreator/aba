@@ -334,8 +334,8 @@ main.main{
 }
 @media (max-width: 479px) {
     .header__menu{
-        top: 89px;
-        height: calc(100vh - 89px);
+        top: 88px;
+        height: calc(100vh - 88px);
     }
     .header__menu-bg{
         top: 89px;
