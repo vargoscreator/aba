@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let swiper = new Swiper(".hero__slider", {
-        loop: false,
+        loop: true,
         spaceBetween: 20,
         slidesPerView: 1,
         allowTouchMove: true,
