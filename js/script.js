@@ -13,12 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         //     nextEl: ".button-next",
         //     prevEl: ".button-prev",
         // },
-        breakpoints: {
-            768: {
-                direction: 'vertical',
-                effect: 'slide',
-            },
-        },
     });
     
     
