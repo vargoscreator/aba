@@ -209,6 +209,7 @@ main.main{
     height: 33px;
     font-size: 12px;
     border-radius: 16px;
+    line-height: 14px;
 }
 .header__burger{
     display: none;
@@ -1228,4 +1229,35 @@ main.main{
     height: 57px;
     max-width: 338px;
     margin: 26px auto 0;
+}
+@media (max-width: 1279px) {
+    .notfound__inner{
+        max-width: 800px;
+    }
+}
+@media (max-width: 767px) {
+    .notfound {
+        margin-top: 50px;
+    }
+    .notfound__name {
+        font-size: 160px;
+        margin-bottom: 0;
+    }
+    .notfound__name span::before {
+        width: 17px;
+        height: 26px;
+        background-position: center;
+        background-size: 100%;
+        bottom: 73px;
+        left: 49px;
+    }
+}
+@media (max-width: 479px) {
+    .notfound__inner{
+        padding: 42px 20px 52px;
+    }
+    .notfound__name {
+        font-size: 90px;
+        margin-bottom: 0;
+    }
 }
