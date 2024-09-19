@@ -146,8 +146,8 @@ main.main{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin: 0 -15px;
-    padding: 0 15px;
+    margin: 0 -30px;
+    padding: 0 30px;
     overflow-x: auto;
 }
 .breadcrumbs__link{
@@ -1488,6 +1488,27 @@ main.main{
     line-height: 155%;
     max-width: 747px;
 }
+.page-banner__article{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.page-article__icon{
+    display: flex;
+    align-items: center;
+}
+.page-article__descr{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.page-article__descr p{
+    color: rgba(40, 40, 40, 0.70);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 155%;
+    letter-spacing: -0.14px;
+}
 @media (max-width: 1279px) {
     .page-banner .container{
         max-width: 1132px;
@@ -1527,6 +1548,9 @@ main.main{
     .page-banner__inner{
         min-height: 200px;
         padding-top: 20px;
+    }
+    .page-article__descr p{
+        font-size: 12px;
     }
 }
 .courses{
