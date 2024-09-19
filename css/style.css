@@ -1331,13 +1331,29 @@ main.main{
     padding: 62px 20px 82px;
     border-radius: 30px;
     overflow: hidden;
-    background-image: url('../img/notfound.svg'), linear-gradient(101deg, #C2EAC7 1.73%, #D1E2F9 91.8%);
+    background: linear-gradient(101deg, #C2EAC7 1.73%, #D1E2F9 91.8%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
     max-width: 1006px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.notfound__inner::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url('../img/banner-bg.svg');
+    top: -24px;
+    right: -23px;
+    width: 758.998px;
+    height: 610.813px;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
 .notfound__name {
     text-align: center;
@@ -1402,6 +1418,10 @@ main.main{
         bottom: 73px;
         left: 49px;
     }
+    .notfound__inner::before {
+        width: 458.998px;
+        height: 390.813px;
+    }
 }
 @media (max-width: 479px) {
     .notfound__inner{
@@ -1439,13 +1459,13 @@ main.main{
     content: '';
     position: absolute;
     z-index: -1;
-    background-image: url('../img/courses-bg.svg');
+    background-image: url('../img/banner-bg.svg');
     top: -24px;
     right: -23px;
     width: 758.998px;
     height: 610.813px;
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     pointer-events: none;
 }
@@ -1484,6 +1504,10 @@ main.main{
     .page-banner__title {
         font-size: 28px;
     }
+    .page-banner .container::before{
+        width: 458.998px;
+        height: 390.813px;
+    }
 }
 @media (max-width: 479px) {
     .page-banner .breadcrumbs {
@@ -1502,14 +1526,6 @@ main.main{
         height: 410.813px;
     }
 }
-
-
-
-
-
-
-
-
 .courses{
     margin-top: 120px;
 }
@@ -1535,7 +1551,6 @@ main.main{
     line-height: 115%; /* 27.6px */
     letter-spacing: -0.24px;
 }
-
 .courses__item-content{
     margin-top: 26px;
     display: flex;
@@ -1734,7 +1749,6 @@ main.main{
 }
 
 /* module */
-
 .formats{
     margin-top: 120px;
 }
@@ -2427,5 +2441,229 @@ main.main{
     }
     .schedule__item-content table {
         min-width: 500px;
+    }
+}
+/* addReview */
+.addReview{
+    margin-top: 96px;
+}
+.addReview__inner{
+    max-width: 1006px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(101deg, #C2EAC7 1.73%, #D1E2F9 91.8%);
+    padding: 0 20px;
+}
+.addReview__inner::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-image: url('../img/banner-bg.svg');
+    top: -24px;
+    right: -23px;
+    width: 758.998px;
+    height: 610.813px;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.addReview__inner::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.addReview__content{
+    padding: 80px 0;
+    max-width: 587px;
+    margin: 0 auto;
+}
+.addReview__title{
+    text-align: center;
+}
+.addReview__form{
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
+.addReview__form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.addReview__form-box{
+    display: flex;
+    flex-direction: column;
+}
+.addReview__form input,
+.addReview__form select,
+.addReview__form textarea{
+    margin-top: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132%;
+    letter-spacing: -0.16px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #282828;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    height: 58px;
+}
+.addReview__form select{
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M3.53438 6.45492C3.77788 6.20653 4.15892 6.18395 4.42743 6.38718L4.50435 6.45492L10.0002 12.0612L15.496 6.45492C15.7395 6.20653 16.1205 6.18395 16.389 6.38718L16.4659 6.45492C16.7094 6.7033 16.7316 7.09198 16.5324 7.36587L16.4659 7.44434L10.4851 13.5451C10.2416 13.7935 9.86061 13.816 9.5921 13.6128L9.51518 13.5451L3.53438 7.44434C3.26653 7.17112 3.26653 6.72814 3.53438 6.45492Z' fill='%23282828'/%3E%3C/svg%3E");
+    background-position: right 17px center;
+    background-repeat: no-repeat,repeat;
+    background-size: 20px 20px;
+    box-sizing: border-box;
+    color: #221f1f;
+    cursor: pointer;
+    display: inline-flex;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 12px;
+    padding-right: 40px;
+    text-align: left;
+    width: 100%;
+}
+.addReview__form textarea{
+    resize: none;
+    height: 232px;
+}
+.addReview__form-btn{
+    margin: 0 auto;
+}
+.addReview__form-block{
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    gap: 69px;
+}
+.addReview__form-radio {
+    line-height: 115%; /* 18.4px */
+    display: flex;
+    cursor: pointer;
+}
+.addReview__form-radio input {
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.addReview__form-radio input + .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 34px;
+    cursor: pointer;
+    display: inline-block;
+}
+.addReview__form-radio input + .checkmark:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    border: 0.4px solid rgba(40, 40, 40, 0.28);
+    background: #FFF;
+}
+.addReview__form-radio input:checked + .checkmark:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 12px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10' fill='none'%3E%3Cpath d='M3.87459 9.33254C3.53397 9.33269 3.20728 9.1973 2.96662 8.95624L0.221531 6.21215C-0.0738435 5.91668 -0.0738435 5.43773 0.221531 5.14226C0.516999 4.8469 0.995954 4.8469 1.29142 5.14226L3.87459 7.72544L10.7086 0.891457C11.004 0.596077 11.483 0.596077 11.7785 0.891457C12.0738 1.18693 12.0738 1.66588 11.7785 1.96135L4.78257 8.95624C4.54191 9.1973 4.21523 9.33269 3.87459 9.33254Z' fill='%2355AC30'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.addReview__send{
+    display: none;
+    padding: 114px 0;
+    max-width: 469px;
+    margin: 0 auto;
+}
+.addReview__send-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.addReview__send-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addReview__send-title{
+    margin: 0;
+}
+.addReview__send-descr{
+    text-align: center;
+    margin: 24px auto 45px;
+    font-size: 20px;
+    line-height: 115%; /* 23px */
+    letter-spacing: -0.2px;
+}
+.addReview__send-btn{
+    max-width: 338px;
+    height: 57px;
+    margin: 0 auto;
+    letter-spacing: -0.16px;
+}
+
+.addReview__send.active{
+    display: block;
+}
+.addReview__send.active ~ .addReview__content{
+    display: none;
+}
+@media (max-width: 767px) {
+    .addReview {
+        margin-top: 50px;
+    }
+    .addReview__send-top{
+        flex-direction: column;
+    }
+    .addReview__send-icon svg{
+        width: 60px;
+        height: 60px;
+    }
+    .addReview__send-title{
+        text-align: center;
+    }
+    .addReview__send-descr{
+        font-size: 18px;
+    }
+    .addReview__send {
+        padding: 54px 0;
+    }
+    .addReview__content {
+        padding: 60px 0;
+    }
+}
+@media (max-width: 479px) {
+    .addReview__form-block {
+        gap: 29px;
     }
 }
