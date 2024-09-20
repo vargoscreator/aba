@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Контакти</title>
+    <title>Перевірити сертифікат</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
                             <a class="header__link" href="certification.html">Сертифікація</a>
                         </li>
                         <li>
-                            <a class="header__link" href="verification-of-certificates.html">Перевірка сертифікатів</a>
+                            <a class="header__link" href="check-the-certificate.html">Перевірка сертифікатів</a>
                         </li>
                         <li>
                             <a class="header__link" href="registry.html">Реєстр</a>
@@ -74,102 +74,115 @@
                             <a class="breadcrumbs__link" href="index.html">Головна</a>
                         </li>
                         <li>
-                            <a class="breadcrumbs__link active" href="contacts.html">Контакти</a>
+                            <a class="breadcrumbs__link active" href="check-the-certificate.html">Перевірити сертифікат</a>
                         </li>
                     </ul>
                     <div class="page-banner-content">
-                        <h1 class="page-banner__title">Контакти</h1>
+                        <h1 class="page-banner__title">Перевірити сертифікат</h1>
                     </div>
                 </div>
             </div>
         </section> 
 
-
-        <div class="contacts">
+        <section class="check">
             <div class="container">
-                <div class="contacts__inner">
-                    <div class="contacts__box">
-                        <div class="contacts__block">
-                            <div class="contacts__item">
-                                <p class="contacts__name">Адреса:</p>
-                                <a class="contacts__descr" href="#">Дніпро, пр. Гагаріна, 74 оф. 410</a>
+                <div class="check__inner">
+                    <div class="check__top">
+                        <h2 class="check__title">Введіть номер сертифіката або прізвище, щоб отримати інформацію</h2>
+                        <form class="check__form" action="#">
+                            <div class="check__form-block">
+                                <input type="text" name="name" id="name" placeholder="Номер сертифіката або прізвище" required>
+                                <label for="name">Наприклад, “Литвиненко Н.М.”</label>
                             </div>
-                            <div class="contacts__item">
-                                <p class="contacts__name">Телефон:</p>
-                                <a class="contacts__descr" href="tel:+380502061111">+38 050 206-11-11</a>
-                            </div>
-                            <div class="contacts__item">
-                                <p class="contacts__name">Графік роботи:</p>
-                                <p class="contacts__descr">ПН-ПТ: 9:00-19:00</p>
-                            </div>
-                            <div class="contacts__item">
-                                <p class="contacts__name">Email</p>
-                                <a class="contacts__descr" href="mailto:ukraine@aba-kurs.com">ukraine@aba-kurs.com</a>
-                            </div>
-                        </div>
-                        <button class="contacts__btn btn">Написати нам</button>
+                            <button class="btn" type="submit">Перевірити</button>
+                        </form>
                     </div>
-                    <div class="contacts__box">
-                        <p class="contacts__name">Наші данні:</p>
-                        <div class="contacts__block">
-                            <div class="contacts__item">
-                                <p class="contacts__about">Фізична особа  підприємець:</p>
-                                <p class="contacts__descr">Калінічева Ханна Володимирівна</p>
-                            </div>
-                            <div class="contacts__item">
-                                <p class="contacts__about">Код ЄДРПОУ:</p>
-                                <p class="contacts__descr">3114306287</p>
-                            </div>
-                            <div class="contacts__item">
-                                <p class="contacts__about">IBAN:</p>
-                                <p class="contacts__descr">UA453052990000026009050510674</p>
-                            </div>
-                            <div class="contacts__item">
-                                <p class="contacts__about">Назва банку:</p>
-                                <p class="contacts__descr">АТ КБ «ПриватБанк»</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts__box">
-                        <div class="contacts__map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.4065770297243!2d35.03650397675872!3d48.429536030790004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcb356ef2c8d%3A0x6fee264519be1cd4!2z0L_RgNC-0YHQv9C10LrRgiDQndCw0YPQutC4LCA3NCwgNDEwLCDQlNC90ZbQv9GA0L4sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1726816663582!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <section class="feedback">
-            <div class="container">
-                <div class="feedback__inner">
-                    <span class="feedback__close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M17 8.41L15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41Z" fill="#282828"/>
-                        </svg>
-                    </span>
-                    <h2 class="feedback__title">Напишіть нам електронний лист.</h2>
-                    <form class="feedback__form" action="#">
-                        <div class="feedback__form-block">
-                            <label for="name">Ваше ім’я</label>
-                            <input type="text" id="name" name="name" required>
+                    <div class="check__content">
+                        <div class="check__content-top">
+                            <p class="check__content-name">Програма підвищення кваліфікації</p>
+                            <p class="check__content-name">Строки програми</p>
+                            <p class="check__content-name">Дата сертифікації</p>
+                            <p class="check__content-name">ПІП</p>
+                            <p class="check__content-name">Перевірити сертифікат</p>
                         </div>
-                        <div class="feedback__form-block">
-                            <label for="tel">Номер телефону</label>
-                            <input type="tel" id="tel" name="tel" required>
+                        <div class="check__content-block">
+                            <div class="check__content-item">
+                                <div class="check__content-descr">
+                                    <h3>Базисні принципи та методи прикладного аналізу поведінки (АВА)</h3>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>13.05.2023 - 18.05.2023</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>27 трав. 2023 р., 16:42:31</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>Букач Оксана</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="check__content-item">
+                                <div class="check__content-descr">
+                                    <h3>Базисні принципи та методи прикладного аналізу поведінки (АВА)</h3>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>13.05.2023 - 18.05.2023</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>27 трав. 2023 р., 16:42:31</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>Букач Оксана</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="check__content-item">
+                                <div class="check__content-descr">
+                                    <h3>Базисні принципи та методи прикладного аналізу поведінки (АВА)</h3>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>13.05.2023 - 18.05.2023</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>27 трав. 2023 р., 16:42:31</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>Букач Оксана</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="check__content-item">
+                                <div class="check__content-descr">
+                                    <h3>Базисні принципи та методи прикладного аналізу поведінки (АВА)</h3>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>13.05.2023 - 18.05.2023</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>27 трав. 2023 р., 16:42:31</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p>Букач Оксана</p>
+                                </div>
+                                <div class="check__content-descr">
+                                    <p></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="feedback__form-block">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="feedback__form-block">
-                            <label for="message">Повідомлення</label>
-                            <textarea name="message" id="message"></textarea>
-                        </div>
-                        <button class="feedback__btn btn" type="submit">Відправити</button>
-                    </form>
+                    </div>
+
                 </div>
             </div>
         </section>
+        
+        
 
     </main>
 
@@ -264,6 +277,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/contacts.js"></script>
+    <script src="js/certificate.js"></script>
 </body>
 </html>
