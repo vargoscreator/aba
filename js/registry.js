@@ -23,6 +23,27 @@ registryButtons.forEach(button => {
 
 const formElement = document.getElementById("registryForm");
 const selectElement = document.getElementById("city");
+formElement.addEventListener('submit', function(event) {
+    event.preventDefault();
+    // TEST
+    document.querySelector('.registry__content-results').classList.add('active');
+    document.querySelector('.registry__content-main').classList.remove('active');
+    // TEST
+
+    // const formData = new FormData(this);
+    // fetch('sent.php', {
+    //     method: 'POST',
+    //     body: formData
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    //     document.querySelector('.registry__content-results').classList.add('active');
+    //     document.querySelector('.registry__content-main').classList.remove('active');
+    // })
+    // .catch(error => {
+    //     console.error('Ошибка:', error);
+    // });
+});
 formElement.addEventListener("reset", function() {
     selectElement.style.color = "rgba(40, 40, 40, 0.31)";
 });

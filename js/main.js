@@ -8,8 +8,4 @@ let swiper = new Swiper(".hero__slider", {
         el: '.hero__slider-pagination',
         clickable: true
     },
-    // navigation: {
-    //     nextEl: ".button-next",
-    //     prevEl: ".button-prev",
-    // },
 });   

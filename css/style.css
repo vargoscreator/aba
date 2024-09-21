@@ -119,6 +119,7 @@ main.main{
     padding: 8px 19px;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     border-radius: 26px;
     background: #55AC30;
     color: #FFF;
@@ -141,6 +142,22 @@ main.main{
 .btn-disable{
     opacity: 0.4;
     pointer-events: none;
+}
+.btn-2{
+    color: #55AC30;
+    background-color: transparent;
+    outline-color: #55AC30;
+    font-weight: 500;
+}
+.btn-2:hover{
+    background-color: #55AC30;
+    color: #fff;
+}
+.btn-2 svg path{
+    transition: all .1s ease;
+}
+.btn-2:hover svg path{
+    fill: #fff;
 }
 .breadcrumbs{
     display: flex;
@@ -1510,6 +1527,9 @@ main.main{
     line-height: 155%;
     letter-spacing: -0.14px;
 }
+.page-banner__specialist .page-banner__inner{
+    min-height: auto;
+}
 @media (max-width: 1279px) {
     .page-banner .container{
         max-width: 1132px;
@@ -2247,6 +2267,7 @@ main.main{
     border: 1px solid #55AC30;
     background-color: #fff;
     opacity: 1;
+    margin: 0 !important;
 }
 .reviews__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
     border: 5px solid #55AC30;
@@ -3617,6 +3638,10 @@ main.main{
 }
 .registry__content-main{
     margin-top: 94px;
+    display: none;
+}
+.registry__content-main.active{
+    display: block;
 }
 .registry__select{
     display: flex;
@@ -3655,6 +3680,16 @@ main.main{
 .registry__reset-mobile{
     display: none;
 }
+.registry__content-results{
+    display: none;
+    margin-top: 120px;
+}
+.registry__content-results.active{
+    display: block;
+}
+.registry__results-more{
+    margin: 53px auto 0;
+}
 @media (max-width: 1279px) {
     .registry__form{
         flex-direction: column;
@@ -3678,7 +3713,7 @@ main.main{
     }
 }
 @media (max-width: 767px) {
-    .registry__content {
+    .registry__content-results{
         margin-top: 100px;
     }
     .registry__block {
@@ -3713,7 +3748,7 @@ main.main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .registry__content {
+    .registry__content-results{
         margin-top: 80px;
     }
     .registry__form-block{
@@ -3731,5 +3766,229 @@ main.main{
     }
     .registry__select-item{
         padding: 5px;
+    }
+}
+
+/* specialist */
+.specialist{
+    margin-top: 55px;
+}
+.specialist__top{
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
+}
+.specialist__left{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+}
+.specialist__image{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+    max-width: 366px;
+}
+.specialist__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.specialist__content{
+    border-radius: 20px;
+    background: #FFF;
+    padding: 35px;
+    width: 100%;
+}
+.specialist__review{
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.specialist__review-block{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;   
+}
+.specialist__review-stars{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.specialist__review-btn{
+    max-width: 141px;
+    height: 34px;
+    font-size: 12px;
+    line-height: 115%; /* 13.8px */
+    letter-spacing: -0.12px;
+}
+.specialist__about{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 24px;
+    max-width: 369px;
+}
+.specialist__about-item{
+    display: flex;
+    gap: 2px 6px;
+}
+.specialist__about-item:last-of-type{
+    flex-direction: column;
+}
+.specialist__about-name{
+    color: rgba(40, 40, 40, 0.40);
+    line-height: 155%;
+}
+.specialist__about-descr{
+    font-weight: 500;
+    line-height: 155%;
+}
+.specialist__message-btn{
+    margin-top: 25px;
+    max-width: 236px;
+    height: 45px;
+    font-weight: 500;
+    line-height: 155%; /* 24.8px */
+    letter-spacing: -0.16px;
+}
+.specialist__slider-content{
+    width: 100%;
+    max-width: 328px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.specialist__slider{
+    width: 100%;
+    max-width: 302px;
+    overflow: hidden;
+    height: 430px;
+}
+.specialist__slide{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.specialist__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.specialist__slider-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: wrap;
+    transform: none !important;
+}
+.specialist__slider-pagination .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    border: 1px solid #55AC30;
+    background-color: transparent;
+    opacity: 1;
+    margin: 0 !important;
+}
+.specialist__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    border: 5px solid #55AC30;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+}
+
+
+.specialist__box{
+    margin-top: 35px;
+    display: flex;
+    gap: 16px;
+}
+.specialist__block{
+    border-radius: 20px;
+    border: 1px solid #C2EAC7;
+    background: #FFF;
+    padding: 35px;
+    width: 100%;
+}
+.specialist__block p{
+    color: rgba(40, 40, 40, 0.40);
+    line-height: 155%;
+}
+.specialist__block ul{
+    margin-top: 16px;
+    padding-left: 24px;
+    max-width: 501px;
+}
+.specialist__block ul li{
+    position: relative;
+}
+.specialist__block ul li::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 3px;
+    height: 3px;
+    background-color: #282828;
+    border-radius: 50%;
+    left: -13px;
+}
+.specialist__block ul li + li{
+    margin-top: 16px;
+}
+.specialist__back{
+    margin: 60px auto 0;
+}
+@media (max-width: 999px) {
+    .specialist__top{
+        flex-direction: column;
+    }
+    .specialist__slider-content{
+        max-width: 100%;
+        flex-direction: column-reverse;
+    }
+    .specialist__slider{
+        max-width: 100%;
+        height: auto;
+    }
+    .specialist__slider-pagination{
+        flex-direction: row;
+    }
+    .specialist__block {
+        padding: 35px 25px;
+    }
+}
+@media (max-width: 767px) {
+    .specialist__left{
+        flex-direction: column;
+    }
+    .specialist__image{
+        max-width: 100%;
+    }
+    .specialist__box{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .specialist__block,
+    .specialist__content{
+        padding: 25px;
+    }
+    .specialist__back {
+        max-width: 190px;
+        margin-top: 40px;
     }
 }
