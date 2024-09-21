@@ -1617,6 +1617,9 @@ main.main{
     .page-article__descr p{
         font-size: 12px;
     }
+    .page-banner__specialist .page-banner__inner{
+        padding: 35px 0 ;
+    }
 }
 .courses{
     margin-top: 120px;
@@ -4081,7 +4084,7 @@ main.main{
         grid-template-columns: repeat(2, 1fr);
     }
     .blockBanner__item{
-        padding: 36px 39px 36px 36px;
+        padding: 42px 33px 42px 30px;
     }
 }
 @media (max-width: 767px) {
@@ -4097,7 +4100,7 @@ main.main{
         margin-top: 80px;
     }
     .blockBanner__item {
-        padding: 26px 29px 26px 26px;
+        padding: 32px 23px 32px 20px;
     }
 }
 .about{
