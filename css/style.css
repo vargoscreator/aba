@@ -3774,6 +3774,9 @@ main.main{
     }
 }
 @media (max-width: 767px) {
+    .registry__content{
+        margin-top: 100px;
+    }
     .registry__content-results{
         margin-top: 100px;
     }
@@ -3808,6 +3811,10 @@ main.main{
         gap: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: -20px;
+    }
+    .registry__content{
+        margin-top: 80px;
     }
     .registry__content-results{
         margin-top: 80px;
