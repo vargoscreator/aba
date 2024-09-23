@@ -1750,6 +1750,7 @@ main.main{
     font-size: 14px;
 }
 .courses__item-btn{
+    margin-top: 10px;
     height: 44px;
     max-width: 156px;
     margin: 0 auto;
