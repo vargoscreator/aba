@@ -1780,9 +1780,6 @@ main.main{
         margin-bottom: 0;
         padding: 27px 10px 20px 10px;
     }
-    .courses__item-btn{
-        margin-top: 10px;
-    }
 }
 @media (max-width: 767px) {
     .courses {
