@@ -45,3 +45,9 @@ document.querySelectorAll('.feedback__close, .specialist__message-btn').forEach(
         document.querySelector('.feedback').classList.toggle('active')
     });
 });
+
+Fancybox.bind('[data-fancybox]', {
+    Carousel : {
+        infinite: false
+    }
+});  

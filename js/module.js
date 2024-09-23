@@ -30,3 +30,9 @@ document.querySelectorAll('.questions__item-name').forEach(function(itemName) {
         }
     });
 });
+
+Fancybox.bind('[data-fancybox]', {
+    Carousel : {
+        infinite: false
+    }
+});  
