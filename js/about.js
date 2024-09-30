@@ -17,3 +17,21 @@ let swiperReviews = new Swiper(".our-teachers__slider", {
         }
     }
 });
+
+const videos = document.querySelectorAll('.videoContent');
+const buttons = document.querySelectorAll('.video-btn');
+buttons.forEach((button, index) => {
+    const video = videos[index];
+    button.addEventListener('click', function() {
+        video.play();
+        button.style.display = 'none';
+    });
+    video.addEventListener('play', function() {
+        video.setAttribute('controls', 'true');
+        button.style.display = 'none';
+    });
+    video.addEventListener('ended', function() {
+        video.removeAttribute('controls');
+        button.style.display = 'block';
+    });
+});
